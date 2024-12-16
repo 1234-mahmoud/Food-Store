@@ -4,6 +4,7 @@ import { TbMeat } from "react-icons/tb";
 import { GiSlicedBread } from "react-icons/gi";
 import { BiDrink } from "react-icons/bi";
 import { GiFruitBowl } from "react-icons/gi";
+import { BsFillCupFill } from "react-icons/bs"; 
 import React from "react";
 import "../style/Category.css";
 import { css } from "@emotion/react";
@@ -30,8 +31,32 @@ export default function Category() {
     <GiFruitBowl />,
     <BiDrink />,
     <GiSlicedBread />,
-    <TbMeat />,
+    <BsFillCupFill />,
   ];
+
+  // const imgs = [
+  //  "img1",
+  //  "img2",
+  //  "img3",
+  //  "img4",
+  //  "img5",
+  //  "img6",
+  //  "img7",
+  //  "img8",
+  //  "img9",
+  //  "img10",
+  //  "img11",
+  //  "img12",
+  //  "img13",
+  //  "img14",
+  //  "img15",
+  //  "img16",
+  //  "img17",
+  //  "img18",
+  //  "img19",
+  //  "img20",
+  // ];
+  
   const visibleCount = 4; // Number of items visible at a time
   const maxCount = imgs.length - visibleCount; // Stop before showing box 4 fully
 
@@ -45,11 +70,11 @@ export default function Category() {
 // --------------------------------------------
 
 const sliderStyle = css`
-    transform: translateX(-${count * 25}%);
+   transform: translateX(-${count * 25}% );
     transition: transform 0.5s ease-in-out;
 
     @media (max-width: 767px) {
-      transform: translateX(-${count * 100}%);
+      
     }
   `;
 
@@ -58,9 +83,9 @@ const sliderStyle = css`
   return (
     <div className="category">
       <div className="container">
-        <div className="slider">
+        <div className="slider_ct">
           <div
-            className="slider_img"
+            className="slider_img_ct"
             css={sliderStyle}
           >
             {imgs.map((img, index) => (
