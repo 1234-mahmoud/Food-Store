@@ -1,0 +1,19 @@
+.discount_form{
+outline:2px solid black;
+}
+
+.discount_form .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+background-color: #e5f3fb;
+
+}
+.discount_form .container .discount_info{
+    flex: 50%;
+}
+
+.discount_form .container .reg{
+    flex: 50%;
+}

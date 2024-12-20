@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Links from './components/Links';
 import Products from './components/Products';
 import Sale from './components/Sale';
-
+import Form from './components/Form';
 function App() {
   return (
     <div className="App">
@@ -18,6 +18,7 @@ function App() {
     <Products/>
     <Discount/>
     <BestSelling/>
+    <Form/>
     </div>
   );
 }
