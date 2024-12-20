@@ -1,5 +1,7 @@
 import './App.css';
+import BestSelling from './components/BestSelling';
 import Category from './components/Category';
+import Discount from './components/Discount';
 import Header from './components/Header';
 import Links from './components/Links';
 import Products from './components/Products';
@@ -14,6 +16,8 @@ function App() {
     <Category/>
     <Category/>
     <Products/>
+    <Discount/>
+    <BestSelling/>
     </div>
   );
 }

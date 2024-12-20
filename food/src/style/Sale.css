@@ -1,104 +1,99 @@
-.sale{
-  padding:80px 10px;
+.sale {
+  padding: 80px 10px;
 }
 
-.sale .container{
-
-    display: grid;
-    grid-template-columns: 60% 40%;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.sale .container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-@media (max-width:767px) {
-    .sale .container{
-        grid-template-columns:100%;
-       
-    }
+@media (max-width: 767px) {
+  .sale .container {
+    grid-template-columns: 100%;
+  }
 }
-.sale .container .slider{
-background-color: #e6f3fa;
-height: 420px;
-border-radius: 7px;
-}
-
-.sale .container .products_sale{
-display: flex;
-flex-direction: column;
-gap:20px;
+.sale .container .slider {
+  background-color: #e6f3fa;
+  height: 420px;
+  border-radius: 7px;
 }
 
-/* ---------------------------------------------------- */
-
-.sale .container .products_sale .vegetables{
-    background-color: #EDF5E5;
-    height: 200px;
-border-radius: 7px;
-padding: 20px 10px 0 20px;
-display: flex;
-flex-direction: column;
-position: relative;
-overflow: hidden;
-}
-
-.sale .container .products_sale .card .discount{
-font-size: 1.2rem;
-position: relative;
-display: flex;
-flex-direction: column;
-}
-.sale .container .products_sale .card .sale_txt{
-    margin-left: 50px;
-    font-size: .8rem;
-}
-.sale .container .products_sale .card .discount::before{
-    content: "";
-position: absolute;
-top:35px;
-width: 40px;
-height: 1.5px;
-background-color: black;
-
-}
-.sale .container .products_sale .card h3{
-width: 130px;
-
-}
-
-.sale .container .products_sale .card a{
-color: black;
-display: flex;
-gap: 5px;
-align-items: center;
-}
-
-
-.sale .container .products_sale .card img{
-width:150px;
-position: absolute;
-right: -20px;
-bottom: -20px;
-transform: rotateZ(-45deg);
+.sale .container .products_sale {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* ---------------------------------------------------- */
 
-.sale .container .products_sale .baked{
-    background-color: #f9ebe7;
-    height: 200px;
-border-radius: 7px;
-padding: 20px 10px 0 20px;
-display: flex;
-flex-direction: column;
-position: relative;
-overflow: hidden;
+.sale .container .products_sale .vegetables {
+  background-color: #edf5e5;
+  height: 200px;
+  border-radius: 7px;
+  padding: 20px 10px 0 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
-.products_sale .card .baked_img{
-    width:150px !important;
-    position: absolute;
-    right: 10px !important;
-    bottom:-10px !important;
-    transform: rotateZ(0) !important;
-    }
+.sale .container .products_sale .card_sale .discount_sale {
+  font-size: 1.2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.sale .container .products_sale .card_sale .sale_txt {
+  margin-left: 50px;
+  font-size: 0.8rem;
+}
+.sale .container .products_sale .card_sale .discount_sale::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  width: 40px;
+  height: 1.5px;
+  background-color: black;
+}
+.sale .container .products_sale .card_sale h3 {
+  width: 130px;
+}
+
+.sale .container .products_sale .card_sale a {
+  color: black;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.sale .container .products_sale .card_sale img {
+  width: 150px;
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  transform: rotateZ(-45deg);
+}
+
+/* ---------------------------------------------------- */
+
+.sale .container .products_sale .baked {
+  background-color: #f9ebe7;
+  height: 200px;
+  border-radius: 7px;
+  padding: 20px 10px 0 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.products_sale .card_sale .baked_img {
+  width: 150px !important;
+  position: absolute;
+  right: 10px !important;
+  bottom: -10px !important;
+  transform: rotateZ(0) !important;
+}

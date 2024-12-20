@@ -13,8 +13,8 @@ export default function Sale() {
         </div>
         {/* -------------------------------------- */}
         <div className="products_sale">
-          <div className="vegetables card">
-            <span className="discount">20% Off
+          <div className="vegetables card_sale">
+            <span className="discount_sale">20% Off
             </span>
                 <span className="sale_txt ">SALE</span>
             <h3>Fruits & Vegetables</h3>
@@ -25,8 +25,8 @@ export default function Sale() {
               <img src={pic2} alt="" />
           </div>
           {/* --------------------------------------------- */}
-          <div className="baked card">
-          <span className="discount">20% Off
+          <div className="baked card_sale">
+          <span className="discount_sale">20% Off
             </span>
                 <span className="sale_txt">SALE</span>
             <h3>Fruits & Vegetables</h3>

@@ -37,29 +37,6 @@ export default function Category() {
     <BsFillCupFill />,
   ];
 
-  // const imgs = [
-  //  "img1",
-  //  "img2",
-  //  "img3",
-  //  "img4",
-  //  "img5",
-  //  "img6",
-  //  "img7",
-  //  "img8",
-  //  "img9",
-  //  "img10",
-  //  "img11",
-  //  "img12",
-  //  "img13",
-  //  "img14",
-  //  "img15",
-  //  "img16",
-  //  "img17",
-  //  "img18",
-  //  "img19",
-  //  "img20",
-  // ];
-
   const visibleCount = 4; // Number of items visible at a time
   const maxCount = imgs.length - visibleCount; // Stop before showing box 4 fully
 

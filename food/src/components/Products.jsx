@@ -28,7 +28,7 @@ export default function Products() {
       </div>
       <div className="container">
         {products.map((p) => (
-          <div className="card">
+          <div className="card_product">
             <img src={p.image} alt="" />
             <h3>{p.title}</h3>
             <div className="card_info">

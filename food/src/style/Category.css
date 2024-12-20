@@ -1,5 +1,3 @@
-
-
 .category {
   /* background-color: rgb(210, 250, 250); */
   position: relative;
@@ -10,6 +8,16 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 20px;
+}
+
+@media (max-width:767px) {
+  .category .cat_header{
+    flex-direction: column;
+  }
+
+  .category .cat_header h1{
+    font-size: 1.3rem;
+  }
 }
 
 .category .slider_btns_ct{
@@ -91,7 +99,7 @@
 
 @media (max-width:767px){
   .category .container .slider_ct .slider_img_ct{
-    width: 300px !important;
+    width: 250px !important;
   }
   .category .container .slider_ct .slider_img_ct .prod_img {
     flex: 0 0 calc(100% - 10px) !important; 
