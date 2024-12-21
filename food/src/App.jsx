@@ -9,6 +9,7 @@ import Sale from './components/Sale';
 import Form from './components/Form';
 import Blog from './components/Blog';
 import DownloadApp from './components/DownloadApp';
+import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
     <BestSelling/>
     <Blog/>
     <DownloadApp/>
+    <Footer/>
     </div>
   );
 }
