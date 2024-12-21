@@ -71,14 +71,16 @@ gap: 20px;
 }
 
 .products .container .card_product{
-background-color: rgb(236, 236, 236);
+background-color: rgb(255, 255, 255);
+border:1px solid rgb(240, 240, 240);
+border-radius: 5px;
+box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) ;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 border-radius: 15px;
 padding: 10px;
-box-shadow: 0 5px 0 rgba(129, 129, 129, 0.473);
 }
 
 .products .container .card_product img{

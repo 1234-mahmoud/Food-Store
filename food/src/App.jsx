@@ -7,6 +7,8 @@ import Links from './components/Links';
 import Products from './components/Products';
 import Sale from './components/Sale';
 import Form from './components/Form';
+import Blog from './components/Blog';
+import DownloadApp from './components/DownloadApp';
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,10 @@ function App() {
     <Discount/>
     <BestSelling/>
     <Form/>
+    <BestSelling/>
+    <BestSelling/>
+    <Blog/>
+    <DownloadApp/>
     </div>
   );
 }

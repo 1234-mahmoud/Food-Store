@@ -1,0 +1,57 @@
+.download{
+
+}
+
+.download .container{
+background-color:rgb(245, 231, 205);
+display: flex;
+align-items: center;
+height: 300px;
+padding-right:100px;
+}
+
+@media (max-width:767px) {
+    .download .container{
+        flex-direction: column;
+        height:auto;
+        padding:10px 15px;
+        }
+}
+
+.download .container .phone{
+    margin:20px auto ;
+}
+
+.download .container img{
+    height: 350px;
+}
+
+.download .container .download_info{
+    min-width: 250px;
+    max-width: 600px;
+}
+
+.download .container .download_info h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.download .container .download_info p{
+    
+}
+
+.download .container .download_info .download_btns{
+    display: flex;
+   gap: 10px;
+}
+
+.download .container .download_info .download_btns button{
+    width: 150px;
+    height: 35px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}

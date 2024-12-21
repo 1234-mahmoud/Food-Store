@@ -1,19 +1,85 @@
-.discount_form{
-outline:2px solid black;
+.discount_form {
+  /* outline:2px solid black; */
+  margin: 50px 0;
 }
 
-.discount_form .container{
+.discount_form .container {
   display: flex;
+  gap: 50px;
+  background-color: #e5f3fb;
+  padding: 80px;
+  border-radius: 10px;
+}
+
+@media (max-width:767px) {
+  .discount_form .container {
+   flex-wrap: wrap !important;
+   margin: 0 10px;
+   padding: 40px;
+  }
+}
+
+.discount_form .container .discount_info {
+  flex: 50%;
+  /* outline: 2px solid black; */
+}
+
+.discount_form .container .discount_info .information_content {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap:10px;
-background-color: #e5f3fb;
-
-}
-.discount_form .container .discount_info{
-    flex: 50%;
+  /* align-items: center; */
+  gap: 10px;
 }
 
-.discount_form .container .reg{
-    flex: 50%;
+.discount_form .container .discount_info .information_content h1 {
+  font-size: 1.8rem;
+  width: 250px;
+  margin: 0;
+}
+
+.discount_form .container .discount_info .information_content h1 span {
+  color: orange;
+}
+
+.discount_form .container .discount_info .information_content p {
+  margin: 0;
+}
+
+.discount_form .container .reg {
+  flex: 50%;
+  /* outline: 2px solid black; */
+}
+
+.discount_form .container .reg form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 10px;
+}
+
+.discount_form .container .reg form label {
+  color: rgb(66, 66, 70);
+}
+
+.discount_form .container .reg form input {
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  caret-color: rgb(63, 65, 64);
+}
+
+.discount_form .container .reg form input:focus {
+  outline: none;
+}
+
+.discount_form .container .reg form button[type="submit"] {
+  background-color: black;
+  color: white;
+  height: 30px;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  border: none;
 }

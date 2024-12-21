@@ -88,7 +88,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ececec;
+  background-color: rgb(255, 255, 255);
+border:1px solid rgb(240, 240, 240);
+box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) ;
   transition: 0.5s ease-in-out;
 }
 .bestselling .container .slider_ct .slider_img_ct .prod_img:hover {
