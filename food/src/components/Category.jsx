@@ -1,7 +1,7 @@
+import { useState,useEffect } from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import { AiFillCaretLeft } from "react-icons/ai";
 import { AiFillCaretRight } from "react-icons/ai";
-import { useState } from "react";
 /** @jsxImportSource @emotion/react */
 import { TbMeat } from "react-icons/tb";
 import { GiSlicedBread } from "react-icons/gi";
@@ -36,27 +36,55 @@ export default function Category() {
     <GiSlicedBread />,
     <BsFillCupFill />,
   ];
-
-  const visibleCount = 4; // Number of items visible at a time
-  const maxCount = imgs.length - visibleCount; // Stop before showing box 4 fully
-
-  const incCount = () => {
-    setCount((prevCount) => Math.min(prevCount + 1, maxCount));
-  };
-
-  const decCount = () => {
-    setCount((prevCount) => Math.max(prevCount - 1, 0));
-  };
-  // --------------------------------------------
-
-  const sliderStyle = css`
-    transform: translateX(-${count * 25}%);
-    transition: transform 0.5s ease-in-out;
-
-    @media (max-width: 767px) {
-      transform: translateX(-${count * 100}%);
-    }
-  `;
+  const [visibleCount,setVisibleCount]=useState(4)
+  useEffect(() => {
+      // Function to calculate visible items based on screen width
+      const calculateVisibleCount = () => {
+        if (window.innerWidth <= 767) {
+          setVisibleCount(1);
+        } else if (window.innerWidth <= 991) {
+          setVisibleCount(3);
+        } else {
+          setVisibleCount(4);
+        }
+      };
+  
+      // Set initial visible count
+      calculateVisibleCount();
+  
+      // Add resize event listener
+      window.addEventListener("resize", calculateVisibleCount);
+  
+      // Cleanup event listener on unmount
+      return () => {
+        window.removeEventListener("resize", calculateVisibleCount);
+      };
+    }, []);
+    
+    const maxCount = imgs.length - visibleCount; // Stop before showing box 4 fully
+  
+    const incCount = () => {
+      setCount((prevCount) => Math.min(prevCount + 1, maxCount));
+    };
+  
+    const decCount = () => {
+      setCount((prevCount) => Math.max(prevCount - 1, 0));
+    };
+    // --------------------------------------------
+  
+    const sliderStyle = css`
+       transform: translateX(calc(-${count * (100 / visibleCount)}%));
+      transition: transform 0.5s ease-in-out;
+  
+      @media (max-width: 767px) {
+        transform: translateX(-${count * 100}%);
+      }
+  
+        @media (min-width:768px) and (max-width:991px){
+        transform: translateX(calc(-${count * (100 / visibleCount)}%));
+      }
+  
+    `;
 
   return (
     <div className="category">

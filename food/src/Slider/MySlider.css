@@ -13,11 +13,16 @@
 }
 
 
-
 @media (max-width:767px) {
   .container .slider{
     height:600px !important;
   }
+}
+
+@media (min-width:768px) and (max-width:991px){
+.container .slider{
+  max-width: 100%;
+}
 }
 
 .container .slider .slider_img {
@@ -41,6 +46,13 @@ padding: 0 10px;
   }
 }
 
+
+@media (min-width:768px) and (max-width:991px){
+  .container .slider .slider_img .img_com{
+width:100%;
+   
+  }
+  }
 
 .container .slider .slider_img .img_com .slider_info{
  transform: translateY(-50px);

@@ -12,6 +12,7 @@ import { css } from "@emotion/react";
 export default function BestSelling() {
   const [count, setCount] = useState(0);
   const [products, setProducts] = useState([]);
+  const [visibleCount,setVisibleCount]=useState(6)
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -26,7 +27,30 @@ export default function BestSelling() {
     fetchData(); // Call the fetch function
   }, []);
   // ------------------------------
-  const visibleCount = 6; // Number of items visible at a time
+  useEffect(() => {
+    // Function to calculate visible items based on screen width
+    const calculateVisibleCount = () => {
+      if (window.innerWidth <= 767) {
+        setVisibleCount(1);
+      } else if (window.innerWidth <= 991) {
+        setVisibleCount(3);
+      } else {
+        setVisibleCount(6);
+      }
+    };
+
+    // Set initial visible count
+    calculateVisibleCount();
+
+    // Add resize event listener
+    window.addEventListener("resize", calculateVisibleCount);
+
+    // Cleanup event listener on unmount
+    return () => {
+      window.removeEventListener("resize", calculateVisibleCount);
+    };
+  }, []);
+  
   const maxCount = products.length - visibleCount; // Stop before showing box 4 fully
 
   const incCount = () => {
@@ -39,12 +63,17 @@ export default function BestSelling() {
   // --------------------------------------------
 
   const sliderStyle = css`
-    transform: translateX(calc(-${count * 100}% / 6));
+     transform: translateX(calc(-${count * (100 / visibleCount)}%));
     transition: transform 0.5s ease-in-out;
 
     @media (max-width: 767px) {
       transform: translateX(-${count * 100}%);
     }
+
+      @media (min-width:768px) and (max-width:991px){
+      transform: translateX(calc(-${count * (100 / visibleCount)}%));
+    }
+
   `;
   return (
     <div className="bestselling">

@@ -106,6 +106,17 @@ box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) ;
   }
 }
 
+@media (min-width:768px) and (max-width:991px) {
+  .bestselling .container .slider_ct .slider_img_ct {
+    width:100% !important;
+  }
+  .bestselling .container .slider_ct .slider_img_ct .prod_card {
+    flex: 0 0 calc((100% / 3) - 10px) !important;
+  }
+}
+
+
+
 .bestselling .container .slider_ct .slider_img_ct .prod_card .card_selling{
   width: 100%;
   /* height: 100%; */
