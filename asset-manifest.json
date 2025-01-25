@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Food-Store/static/css/main.214e50ea.css",
+    "main.js": "/Food-Store/static/js/main.781ec069.js",
+    "static/media/veg.png": "/Food-Store/static/media/veg.82b1646de29f56980229.png",
+    "static/media/product-thumb-1.png": "/Food-Store/static/media/product-thumb-1.651c65e329354ef6e737.png",
+    "static/media/blog1.jpg": "/Food-Store/static/media/blog1.a6bb81b713d852973d9a.jpg",
+    "static/media/phone.png": "/Food-Store/static/media/phone.1e360c2598fd888f6c25.png",
+    "static/media/blog2.jpg": "/Food-Store/static/media/blog2.e370f5dbffdd4ebc26fd.jpg",
+    "static/media/blog3.jpg": "/Food-Store/static/media/blog3.2ebf5c0a8769de6f3d51.jpg",
+    "static/media/baked.png": "/Food-Store/static/media/baked.d932411040a1149a4368.png",
+    "index.html": "/Food-Store/index.html",
+    "main.214e50ea.css.map": "/Food-Store/static/css/main.214e50ea.css.map",
+    "main.781ec069.js.map": "/Food-Store/static/js/main.781ec069.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.214e50ea.css",
+    "static/js/main.781ec069.js"
+  ]
+}
