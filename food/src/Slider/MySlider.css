@@ -1,0 +1,171 @@
+
+.container .slider{
+   /* border: 2px solid blue; */
+   padding: 15px;
+   margin: auto;
+   overflow: hidden;
+   min-width: 220px;
+   max-width:600px;
+   height: 400px;
+   position: relative;
+   display: flex;
+
+}
+
+
+@media (max-width:767px) {
+  .container .slider{
+    height:600px !important;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px){
+.container .slider{
+  max-width: 100%;
+}
+}
+
+.container .slider .slider_img {
+display: flex;
+gap: 15px;
+align-items: center;
+}
+/* --------------------------------- */
+
+.container .slider .slider_img .img_com{
+width:615px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+padding: 0 10px;
+}
+@media (max-width:767px) {
+  .container .slider .slider_img .img_com{
+    flex-wrap: wrap !important;
+  }
+}
+
+
+@media (min-width:768px) and (max-width:991px){
+  .container .slider .slider_img .img_com{
+width:100%;
+   
+  }
+  }
+
+.container .slider .slider_img .img_com .slider_info{
+ transform: translateY(-50px);
+}
+
+@media (max-width:767px){
+  .container .slider .slider_img .img_com .slider_info{
+ transform: translate(-20px,-130px);
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items:flex-start;
+
+  }
+}
+.container .slider .slider_img .img_com .slider_info span{
+  color: #fac61c;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.container .slider .slider_img .img_com .slider_info h3{
+  font-size: 1.8rem;
+  width: 250px;
+  margin-bottom: 10px;
+}
+@media (max-width:767px){
+  .container .slider .slider_img .img_com .slider_info h3{
+    width: 200px;
+  }
+}
+.container .slider .slider_img .img_com .slider_info p{
+  margin-top: 0;
+  width: 300px;
+}
+
+@media (max-width:767px){
+  .container .slider .slider_img .img_com .slider_info p{
+    width: 200px;
+  }
+}
+.container .slider .slider_img .img_com .slider_info button{
+  background-color: transparent;
+  width: 120px;
+  height: 40px;
+}
+.container .slider .slider_img .img_com .slider_info button:hover{
+  background-color: black;
+  color:white;
+  cursor: pointer;
+}
+/* ------------------------------------- */
+
+.container .slider .slider_img .img_com img{
+   width: 200px;
+   margin-right: 100px;
+
+}
+
+@media (max-width:767px) {
+  .container .slider .slider_img .img_com .prod_img{
+    position: absolute;
+    bottom:-110px;
+  }
+
+  .container .slider .slider_img .img_com img{
+    width: 150px;
+    /* margin-right: 100px;
+  */
+ }
+}
+
+
+.container .slider .slider_btns{
+   width: 90%;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* Bullet Container */
+.container .slider .bullets {
+   position: absolute;
+   bottom: 30px; /* Adjust to position bullets vertically */
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+   z-index: 20;
+ }
+ @media (max-width:767px){
+  .container .slider .bullets{
+    left:120px !important
+  }
+ }
+ /* Individual Bullet */
+ .container .slider .bullets .bullet {
+   width: 12px; /* Bullet size */
+   height: 12px;
+   background-color: #ffffff; /* Inactive bullet color */
+   border-radius: 50%;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ /* Active Bullet */
+ .container .slider .bullets .bullet.active {
+   background-color: #fad047; /* Active bullet color */
+   transform: scale(1.2); /* Slightly enlarge the active bullet */
+ }
+ 
